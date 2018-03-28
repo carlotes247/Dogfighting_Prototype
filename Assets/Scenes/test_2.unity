@@ -24138,7 +24138,7 @@ MonoBehaviour:
   m_CurrentAmmo: 0
   bulletArray: []
   m_DistanceBulletFromObject: 0.5
-  m_DelayBetweenShots: 0.118
+  m_DelayBetweenShots: 0.07
   m_WeaponParticles: {fileID: 794562339}
   m_WeaponTransform: {fileID: 1145814658}
   m_WeaponAudioSource: {fileID: 145207494}
@@ -28271,7 +28271,7 @@ MonoBehaviour:
   m_CurrentAmmo: 0
   bulletArray: []
   m_DistanceBulletFromObject: 0.5
-  m_DelayBetweenShots: 0.118
+  m_DelayBetweenShots: 0.07
   m_WeaponParticles: {fileID: 503106979}
   m_WeaponTransform: {fileID: 1920770244}
   m_WeaponAudioSource: {fileID: 1964219618}
@@ -28456,10 +28456,11 @@ AudioSource:
   m_GameObject: {fileID: 1964219616}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  OutputAudioMixerGroup: {fileID: 243399128189757412, guid: 11fa30b239b80ca4ca07e6618f493cf7,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 646e06f4ebaded64c8f906d4859fcfc5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.42
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -28515,7 +28516,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
