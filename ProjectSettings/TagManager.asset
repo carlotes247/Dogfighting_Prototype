@@ -6,6 +6,8 @@ TagManager:
   tags:
   - StickFigure
   - Enemy
+  - IgnoreBullets
+  - Interactable
   layers:
   - Default
   - TransparentFX
