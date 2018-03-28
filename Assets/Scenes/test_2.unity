@@ -13821,7 +13821,9 @@ MonoBehaviour:
   timerController: {fileID: 0}
   pointsController: {fileID: 0}
   animController: {fileID: 0}
-  m_WeaponController: {fileID: 1920770245}
+  m_WeaponController:
+  - {fileID: 1920770245}
+  - {fileID: 1145814659}
   m_PlayerRoleCtrl: {fileID: 640520535}
   allowGizmos: 1
 --- !u!114 &640520535
