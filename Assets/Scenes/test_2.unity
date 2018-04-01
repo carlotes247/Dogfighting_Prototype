@@ -9307,7 +9307,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 610598866
+  randomSeed: -1836770891
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14710,7 +14710,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 610598866
+  randomSeed: -1552212917
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -24142,6 +24142,7 @@ MonoBehaviour:
   m_WeaponParticles: {fileID: 794562339}
   m_WeaponTransform: {fileID: 1145814658}
   m_WeaponAudioSource: {fileID: 145207494}
+  m_AudioWeaponComplex: {fileID: 0}
   m_ShootingErrorCoeficient: 0
   m_MaxShootingError: 0
 --- !u!1 &1153971081
@@ -25111,6 +25112,116 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368408339}
+--- !u!1 &1368622615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1368622616}
+  - component: {fileID: 1368622617}
+  m_Layer: 0
+  m_Name: Audio Source_Loop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1368622616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368622615}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1920770244}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1368622617
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368622615}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243399128189757412, guid: 11fa30b239b80ca4ca07e6618f493cf7,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 646e06f4ebaded64c8f906d4859fcfc5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1376743086
 GameObject:
   m_ObjectHideFlags: 0
@@ -28229,6 +28340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1920770244}
   - component: {fileID: 1920770245}
+  - component: {fileID: 1920770246}
   m_Layer: 0
   m_Name: Gun_1
   m_TagString: Untagged
@@ -28249,6 +28361,7 @@ Transform:
   - {fileID: 1074900599}
   - {fileID: 503106977}
   - {fileID: 1964219617}
+  - {fileID: 1368622616}
   m_Father: {fileID: 880929253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28275,8 +28388,28 @@ MonoBehaviour:
   m_WeaponParticles: {fileID: 503106979}
   m_WeaponTransform: {fileID: 1920770244}
   m_WeaponAudioSource: {fileID: 1964219618}
+  m_AudioWeaponComplex: {fileID: 1920770246}
   m_ShootingErrorCoeficient: 0
   m_MaxShootingError: 0
+--- !u!114 &1920770246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920770243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f0729607f028f4696cb2c317ab4d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AudioSourceInUse: {fileID: 1964219618}
+  m_AudioSourceLoop: {fileID: 1368622617}
+  m_Intro: {fileID: 8300000, guid: 3436cd88794abbf4b8eddaca0ba56eeb, type: 3}
+  m_Loop: {fileID: 8300000, guid: fa5ffcf3795b7b74699758ff5b0271f4, type: 3}
+  m_IntroPlayedFlag: 0
+  m_LoopPlayingFlag: 0
+  m_PlayFlag: 0
+  m_PlayCalledThisFrame: 0
 --- !u!1 &1924225166
 GameObject:
   m_ObjectHideFlags: 0
@@ -28429,7 +28562,7 @@ GameObject:
   - component: {fileID: 1964219617}
   - component: {fileID: 1964219618}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Audio Source_Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28458,9 +28591,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243399128189757412, guid: 11fa30b239b80ca4ca07e6618f493cf7,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 646e06f4ebaded64c8f906d4859fcfc5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fa5ffcf3795b7b74699758ff5b0271f4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.42
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
